@@ -25,7 +25,7 @@
 <div class="navbar-fixed">
   <nav>
     <ul id="dropdown1" class="dropdown-content blue darken-4 white-text" >
-      <li><a class="white-text" href="#!">Мобильные телефоны</a></li>
+      <li><a class="white-text" href="./GSM">Мобильные телефоны</a></li>
       <li><a class="white-text"  href="#!">Планшеты</a></li>
       <li><a class="white-text"  href="#!"> USB модемы</a></li>
       <li><a class="white-text"  href="#!">Mi-Fi роутеры</a></li>
