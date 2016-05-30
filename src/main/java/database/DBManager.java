@@ -3,31 +3,31 @@ package database;
 
 
 
+
+
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Properties;
 
-import com.j256.ormlite.dao.Dao;
-import com.j256.ormlite.dao.DaoManager;
-import com.j256.ormlite.db.DatabaseType;
-import com.j256.ormlite.db.DatabaseTypeUtils;
-import com.j256.ormlite.db.MysqlDatabaseType;
-import com.j256.ormlite.jdbc.JdbcConnectionSource;
-import com.j256.ormlite.support.ConnectionSource;
-import com.j256.ormlite.support.DatabaseConnection;
+import javax.sql.DataSource;
+
+import com.mysql.jdbc.Statement;
+import com.mysql.jdbc.jdbc2.optional.MysqlDataSource;
 
 import model.Model;
-import com.j256.ormlite.table.TableUtils;
-import com.mysql.jdbc.Statement;
 
 public class DBManager{
 
 
-    private static final String databaseUrl = "jdbc:mysql://adminhtPlGMW:NrIGpl-qyA_R@127.13.43.130:3306/tochka";
-    
+    private static final String databaseUrl = "jdbc:mysql://127.13.43.130:3306/tochka";
+    private static final String userName = "adminhtPlGMW";
+    private static final String password = "NrIGpl-qyA_R";
 
 
     public DBManager(){
@@ -37,8 +37,7 @@ public class DBManager{
     		List<Model> list = new ArrayList<Model>();
        
         	
-          Connection conn = DriverManager.getConnection(databaseUrl);
-          
+          Connection conn = DriverManager.getConnection(databaseUrl, userName, password);
           Statement stmt =  (Statement) conn.createStatement();
           String query =  "SELECT * FROM Model";
           
@@ -53,4 +52,6 @@ public class DBManager{
         
 
     }
+   
+        
 }
