@@ -14,7 +14,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
-
+import com.mysql.jdbc.Driver;
 import javax.sql.DataSource;
 
 import com.mysql.jdbc.Statement;
@@ -33,10 +33,11 @@ public class DBManager{
     public DBManager(){
            }
 
-    public List<Model> getItems() throws SQLException {
+    public List<Model> getItems() throws SQLException, ClassNotFoundException {
     		List<Model> list = new ArrayList<Model>();
        
-        	
+    		Class.forName("com.mysql.jdbc.Driver");
+    		
           Connection conn = DriverManager.getConnection(databaseUrl, userName, password);
           Statement stmt =  (Statement) conn.createStatement();
           String query =  "SELECT * FROM Model";

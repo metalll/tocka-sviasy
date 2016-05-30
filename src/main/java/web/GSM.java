@@ -32,7 +32,7 @@ public class GSM extends HttpServlet {
 		try {
 			
 			response.getWriter().write(db.getItems().size()+"");
-		} catch (SQLException e) {
+		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
