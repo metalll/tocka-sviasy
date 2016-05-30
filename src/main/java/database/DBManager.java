@@ -26,7 +26,7 @@ import com.mysql.jdbc.Statement;
 public class DBManager{
 
 
-    private static final String databaseUrl = "jdbc:mysql://$OPENSHIFT_MYSQL_DB_HOST:$OPENSHIFT_MYSQL_DB_PORT/";
+    private static final String databaseUrl = "jdbc:mysql://127.3.200.130:3306/data";
     private static final String userName = "admin8hfKxZ7";
     private static final String password = "u854gGHu_pZz";
 
