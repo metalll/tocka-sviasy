@@ -26,9 +26,8 @@ import com.mysql.jdbc.Statement;
 public class DBManager{
 
 
-    private static final String databaseUrl = "jdbc:mysql://127.13.43.130:3306/tochka";
-    private static final String userName = "adminhtPlGMW";
-    private static final String password = "NrIGpl-qyA_R";
+    private static final String databaseUrl = "jdbc:mysql://adminhtPlGMW:NrIGpl-qyA_R@127.13.43.130:3306/tochka";
+    
 
 
     public DBManager(){
@@ -38,7 +37,7 @@ public class DBManager{
     		List<Model> list = new ArrayList<Model>();
        
         	
-          Connection conn = DriverManager.getConnection(databaseUrl,userName,password);
+          Connection conn = DriverManager.getConnection(databaseUrl);
           
           Statement stmt =  (Statement) conn.createStatement();
           String query =  "SELECT * FROM Model";
