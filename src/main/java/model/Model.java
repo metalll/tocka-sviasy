@@ -4,7 +4,7 @@ import com.j256.ormlite.field.DatabaseField;
 import com.j256.ormlite.table.DatabaseTable;
 
 
-@DatabaseTable(tableName = "Model")
+@DatabaseTable(tableName = "NewModel")
 public class Model {
 
 
@@ -26,16 +26,22 @@ public class Model {
 
     @DatabaseField
     private String logo;
+    
+    @DatabaseField
+    private String exist;
+    
+    
 
 
     public Model(){}
-    public Model(int id,String category,String description,String price,String name,String logo){
+    public Model(int id,String category,String description,String price,String name,String logo,String exist){
         this.id = id;
         this.category = category;
         this.description = description;
         this.price = price;
         this.name = name;
         this.logo = logo;
+        this.exist = exist;
 
     }
 

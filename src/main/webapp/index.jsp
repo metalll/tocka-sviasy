@@ -7,7 +7,7 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
@@ -22,18 +22,16 @@
 </head>
 <body>
 
-<div class="navbar-fixed">
+<div class="navbar-wrapper">
   <nav>
     <ul id="dropdown1" class="dropdown-content blue darken-4 white-text" >
-      <li><a class="white-text" href="./GSM">Мобильные телефоны</a></li>
-      <li><a class="white-text"  href="#!">Планшеты</a></li>
-      <li><a class="white-text"  href="#!"> USB модемы</a></li>
-      <li><a class="white-text"  href="#!">Mi-Fi роутеры</a></li>
-      <li><a class="white-text"  href="#!">Стационарные ПК</a></li>
-      <li><a class="white-text"  href="#!">Ноутбуки</a></li>
-      <li><a class="white-text"  href="#!">Аксессуары</a></li>
+      <li><a class="white-text" href="./CDMA">CDMA телефоны</a></li>
+      <li><a class="white-text"  href="./GSM">GSM телефоны</a></li>
+      <li><a class="white-text"  href="./CDMA_GSM">Двухстандартные телефоны </a></li>
+      <li><a class="white-text"  href="./MODEM">USB модемы</a></li>
+      <li><a class="white-text"  href="./Mi_fi">Mi-Fi роутеры</a></li>
       <li class="divider"></li>
-      <li><a class="white-text"  href="#!">Прочее</a></li>
+      <li><a class="white-text"  href="./ETC">Прочее</a></li>
     </ul>
 
     <div class="nav-wrapper blue darken-4">
@@ -53,10 +51,10 @@
           </div>
         </form>
         </li>
-        <li><a  href="./aboutCompany.jsp"> О компании</a></li>
+       
         <li><a class="dropdown-button active" href="#" data-activates="dropdown1">Каталог товаров<i class="material-icons right">arrow_drop_down</i></a></li>
-        <li><a href="./news.jsp">Новости</a></li>
-        <li class="active"><a href="./contacts.jsp">Контакты</a></li>
+    
+       
       </ul>
     </div>
   </nav>
