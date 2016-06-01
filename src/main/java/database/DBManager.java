@@ -27,8 +27,8 @@ public class DBManager{
 		return instance;	
 	}
 
-    //private static final String databaseUrl = "jdbc:mysql://127.13.43.130:3306/tochka";
-    private static final String databaseUrl = "jdbc:mysql://localhost:3307/tochka";
+    private static final String databaseUrl = "jdbc:mysql://127.13.43.130:3306/tochka";
+    //private static final String databaseUrl = "jdbc:mysql://localhost:3307/tochka";
 	private static final String userName = "adminhtPlGMW";
     private static final String password = "NrIGpl-qyA_R";
     private	Connection conn = null;
