@@ -9,8 +9,8 @@ public class ItemViewGenerator {
 				" <div class=\"col s4\"><div class=\"row\"><div class=\"col s12\"><div class=\"card\">"+
                 " <div class=\"card-image\"><img src=\""+ item.getLogo() + "\">"+
                 " </div> <div class=\"card-content valign-wrapper\">"+
-                " <span class=\"card-title blue-text left-align  text-darken-2\">"+item.getName()+"</span>"+ "<p/>"+
-                " <h5 class=\"right-align green-text\">"+item.getPrice()+"</h5>"+
+                " <span class=\"card-title blue-text center-align  text-darken-2\">"+item.getName()+"</span>"+ "<p/>"+
+                " <h5 class=\"center-align green-text\">"+item.getPrice()+"</h5>"+
                     "</div>"+
                     "<div class=\"card-action valign-wrapper\">"+
 
