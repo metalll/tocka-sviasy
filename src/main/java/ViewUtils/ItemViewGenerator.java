@@ -19,7 +19,7 @@ public class ItemViewGenerator {
 
                         "<a class = \"green-text center-align\" >"+item.getExist()+"</a>"+
                         "<p/>"+
-                        "<button href=\"#\" class = \"waves-effect waves-light btn blue center-align\" >подробнее</button>"+
+                        "<button href=\"./MORE?id="+item.getId()+"\"\" class = \"waves-effect waves-light btn blue center-align\" >подробнее</button>"+
                         "</div>"+
 
                 	"</div>"+
@@ -28,4 +28,7 @@ public class ItemViewGenerator {
 		
 		return View;
 	}
+	
+	
+	
 }

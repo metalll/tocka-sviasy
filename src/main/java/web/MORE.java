@@ -8,16 +8,16 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class ETC
+ * Servlet implementation class MORE
  */
-@WebServlet("/ETC")
-public class ETC extends HttpServlet {
+@WebServlet("/MORE")
+public class MORE extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public ETC() {
+    public MORE() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -26,12 +26,8 @@ public class ETC extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
-		 response.setContentType("text/html;charset=UTF-8");
-		 
-		 request.getRequestDispatcher("/ETCView.jsp").include(request, response);//рисуем jsp
-		 
-		
+		response.getWriter().write(request.getParameter("id"));
+		response.getWriter().append("Served at: ").append(request.getContextPath());
 	}
 
 	/**
