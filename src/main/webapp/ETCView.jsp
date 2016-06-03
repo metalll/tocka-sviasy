@@ -59,7 +59,7 @@
     </div>
   </nav>
 </div>
-
+ <div class="container">
 <div class="row">
 <%@ page import="database.DBManager"%>
 <%@ page import="ViewUtils.ItemViewGenerator" %>
@@ -72,7 +72,7 @@
 	%>
 
 </div>
-
+ </div>
 
 
 
