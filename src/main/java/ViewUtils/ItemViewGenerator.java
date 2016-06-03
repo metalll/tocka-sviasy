@@ -13,17 +13,17 @@ public class ItemViewGenerator {
                 + " <div class=\"card-content valign-wrapper\">"+	//div4
                 " <span class=\"card-title blue-text  text-darken-2\">"+item.getName()+"</span>"+
                 " <h5 class=\"right-align green-text\">"+item.getPrice()+"</h5>"+
-                	   "</div>"+		//div4 close
-                	   "<div class=\"card-action valign-wrapper\">"+	//div5
+                	   "</div>"+
+                	   "<div class=\"card-action valign-wrapper\">"+
 
                         "<a class = \"green-text center-align\" >"+item.getExist()+"</a>"+
                         "<p/>"+
                         "<button href=\"#\" class = \"waves-effect waves-light btn blue center-align\" >подробнее</button>"+
-                        "</div>"+	//div5 close
+                        "</div>"+
 
-                	"</div>"+	//div2 close
-            "</div>";//		div1 close
-       
+                	"</div>"+
+            "</div>"+
+        "</div></div>";
 		
 		return View;
 	}
