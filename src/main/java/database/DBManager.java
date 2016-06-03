@@ -108,7 +108,7 @@ public class DBManager{
      	  conn = DriverManager.getConnection(databaseUrl, userName, password);
            Statement stmt =  (Statement) conn.createStatement();
            
-           String query =  "SELECT * FROM Model	WHERE category = ETC";
+           String query =  "SELECT * FROM Model	WHERE category = 'ETC'";
            
            ResultSet rs = stmt.executeQuery(query);
            
@@ -137,7 +137,7 @@ public class DBManager{
      	  conn = DriverManager.getConnection(databaseUrl, userName, password);
            Statement stmt =  (Statement) conn.createStatement();
            
-           String query =  "SELECT * FROM Model	WHERE category = CDMA";
+           String query =  "SELECT * FROM Model	WHERE category = 'CDMA'";
            
            ResultSet rs = stmt.executeQuery(query);
            
@@ -166,7 +166,7 @@ public class DBManager{
      	  conn = DriverManager.getConnection(databaseUrl, userName, password);
            Statement stmt =  (Statement) conn.createStatement();
            
-           String query =  "SELECT * FROM Model	WHERE category = CDMA_GSM";
+           String query =  "SELECT * FROM Model	WHERE category = 'CDMA_GSM'";
            
            ResultSet rs = stmt.executeQuery(query);
            
@@ -194,7 +194,7 @@ public class DBManager{
      	  conn = DriverManager.getConnection(databaseUrl, userName, password);
            Statement stmt =  (Statement) conn.createStatement();
            
-           String query =  "SELECT * FROM Model	WHERE category = MODEM";
+           String query =  "SELECT * FROM Model	WHERE category = 'MODEM'";
            
            ResultSet rs = stmt.executeQuery(query);
            
@@ -222,7 +222,7 @@ public class DBManager{
      	  conn = DriverManager.getConnection(databaseUrl, userName, password);
            Statement stmt =  (Statement) conn.createStatement();
            
-           String query =  "SELECT * FROM Model	WHERE category = MIFI";
+           String query =  "SELECT * FROM Model	WHERE category = 'MIFI'";
            
            ResultSet rs = stmt.executeQuery(query);
            

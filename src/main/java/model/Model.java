@@ -41,7 +41,7 @@ public class Model {
         this.price = price;
         this.name = name;
         this.logo = logo;
-        this.exist = exist;
+        this.setExist(exist);
 
     }
 
@@ -85,4 +85,10 @@ public class Model {
     public void setId(int id) {
         this.id = id;
     }
+	public String getExist() {
+		return exist;
+	}
+	public void setExist(String exist) {
+		this.exist = exist;
+	}
 }
