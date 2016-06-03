@@ -12,7 +12,7 @@ public class ItemViewGenerator {
                 " <span class=\"card-title blue-text center-align  text-darken-2\">"+item.getName()+"</span>"+ "<p/>"+
                 " <h5 class=\"center-align green-text\">"+item.getPrice()+"</h5>"+
                     "</div>"+
-                    "<div class=\"card-action valign-wrapper\">"+
+                    "<div class=\"card-action\" valign-wrapper>"+
 
                         "<a class = \"green-text center-align\" >"+item.getExist()+"</a>"+
                         "<p/>"+
