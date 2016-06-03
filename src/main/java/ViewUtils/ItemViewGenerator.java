@@ -12,6 +12,7 @@ public class ItemViewGenerator {
                 	  " </div>"								//div3 close
                 + " <div class=\"card-content valign-wrapper\">"+	//div4
                 " <span class=\"card-title blue-text  text-darken-2\">"+item.getName()+"</span>"+
+                "<hr>"+
                 " <h5 class=\"right-align green-text\">"+item.getPrice()+"</h5>"+
                 	   "</div>"+
                 	   "<div class=\"card-action valign-wrapper\">"+
